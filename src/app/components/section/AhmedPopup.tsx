@@ -10,7 +10,11 @@ interface AhmedPopupProps {
   onDisconnect: () => void;
 }
 
-export default function AhmedPopup({ isVisible, isSpeaking, onDisconnect }: AhmedPopupProps) {
+export default function AhmedPopup({
+  isVisible,
+  isSpeaking,
+  onDisconnect,
+}: AhmedPopupProps) {
   return (
     <AnimatePresence>
       {isVisible && (
@@ -23,21 +27,20 @@ export default function AhmedPopup({ isVisible, isSpeaking, onDisconnect }: Ahme
         >
           {/* Circular container */}
           <div
-            className={`relative rounded-full bg-white shadow-2xl border border-gray-200 flex flex-col items-center justify-center p-4 w-24 h-24 cursor-pointer ${
+            className={`relative rounded-full shadow-2xl border border-gray-200 overflow-hidden w-24 h-24 cursor-pointer ${
               isSpeaking ? "animate-pulse ring-4 ring-green-300" : ""
             }`}
           >
-            {/* Ahmed Avatar */}
+            {/* Ahmed Avatar fills the circle completely */}
             <Image
               src="/images/home/ahmed-avatar.jpg"
               alt="Ahmed Voice Assistant"
-              className="w-12 h-12 rounded-full"
-              width={40}
-              height={40}
+              fill
+              className="object-cover"
             />
 
-            {/* Status */}
-            <p className="text-xs mt-2 text-gray-700 font-medium">
+            {/* Status label (optional overlay) */}
+            <p className="absolute bottom-1 w-full text-center text-[10px] text-white font-medium bg-black/50 rounded-b-full">
               {isSpeaking ? "Speaking..." : "Listening..."}
             </p>
 

@@ -29,11 +29,11 @@ export default function AhmedPopup({ isVisible, isSpeaking, onDisconnect }: Ahme
           >
             {/* Ahmed Avatar */}
             <Image
-              src="/images/home/ahmed-avatar.png"
+              src="/images/home/ahmed-avatar.jpg"
               alt="Ahmed Voice Assistant"
               className="w-12 h-12 rounded-full"
-              width={12}
-              height={12}
+              width={40}
+              height={40}
             />
 
             {/* Status */}

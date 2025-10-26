@@ -84,7 +84,7 @@ const features = [
 ];
 
 const description = [
-  'Hseeltech s Voice AI is designed to sound naturally local — confident, warm, and clear. It uses subtle Arabic expressions like "Marhaban" and "Hala wallah" to create cultural familiarity while maintaining professionalism.',
+  "Hseeltech's Voice AI is designed to sound naturally local — confident, warm, and clear. It uses subtle Arabic expressions like 'Marhaban' and 'Hala wallah' to create cultural familiarity while maintaining professionalism.",
   "It's more than automation — it's an intelligent assistant that understands people.",
 ];
 

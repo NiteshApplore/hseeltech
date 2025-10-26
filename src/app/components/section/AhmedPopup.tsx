@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 interface AhmedPopupProps {
   isVisible: boolean;
@@ -27,10 +28,12 @@ export default function AhmedPopup({ isVisible, isSpeaking, onDisconnect }: Ahme
             }`}
           >
             {/* Ahmed Avatar */}
-            <img
+            <Image
               src="/images/home/ahmed-avatar.png"
               alt="Ahmed Voice Assistant"
               className="w-12 h-12 rounded-full"
+              width={12}
+              height={12}
             />
 
             {/* Status */}

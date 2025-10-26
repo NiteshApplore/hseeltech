@@ -16,7 +16,7 @@ interface HowItWorksSectionProps {
   steps: Step[];
   ctaTitle: string;
   ctaDescription: string;
-  ctaButtonText: string;
+  // ctaButtonText: string;
   ctaImage: string;
   ctaImageAlt: string;
   onCtaClick: () => void;
@@ -29,7 +29,7 @@ const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
   steps,
   ctaTitle,
   ctaDescription,
-  ctaButtonText,
+  // ctaButtonText,
   ctaImage,
   ctaImageAlt,
   onCtaClick,
@@ -105,13 +105,13 @@ const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   alt={ctaImageAlt}
                   fill
                   className="object-cover rounded-xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 600px"
                 />
               </div>
 
               {/* CTA Button */}
-              <div className="pt-6">
-                <button
+              {/* <div className="pt-6"> */}
+                {/* <button
                   onClick={onCtaClick}
                   className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 sm:py-5 px-6 rounded-full transition-all duration-300 flex items-center justify-between gap-3 text-base sm:text-lg md:text-xl shadow-lg hover:shadow-xl group"
                 >
@@ -129,8 +129,8 @@ const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                       d="M13 7l5 5m0 0l-5 5m5-5H6"
                     />
                   </svg>
-                </button>
-              </div>
+                </button> */}
+              {/* </div> */}
             </div>
           </div>
         </div>

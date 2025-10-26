@@ -114,7 +114,7 @@ const Home = () => {
           steps={processSteps}
           ctaTitle="Not Sure How It Works ?"
           ctaDescription="Book a demo with our experts & get an step by step tour by our team."
-          ctaButtonText="Book a Free Consultation"
+
           ctaImage="/images/home/howitworks.jpg"
           ctaImageAlt="Cart recovery consultation"
           onCtaClick={() => (window.location.href = "https://www.rmmcc.com/")}

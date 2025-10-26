@@ -241,14 +241,14 @@ export default function MobileNavbar({
 
             {/* Footer CTA */}
             <div className="p-6 border-t border-gray-100">
-              <Link
+              {/* <Link
                 href="https://www.rmmcc.com/"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <Button className="w-full bg-[#52A936] text-white rounded-xl py-4 font-semibold shadow-lg">
                   Book a Demo
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </>

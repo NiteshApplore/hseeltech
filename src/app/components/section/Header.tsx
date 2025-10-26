@@ -156,7 +156,7 @@ export default function Header() {
 
             {/* CTA + Mobile */}
             <div className="flex items-center">
-              <Link
+              {/* <Link
                 href="https://www.rmmcc.com/"
                 className="hidden md:block"
               >
@@ -168,7 +168,7 @@ export default function Header() {
                 <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-3 py-1.5 text-xs font-medium shadow-md transition-all">
                   Book a Demo
                 </Button>
-              </Link>
+              </Link> */}
 
               <MobileNavbar isVideoActive={isVideoActive} />
             </div>

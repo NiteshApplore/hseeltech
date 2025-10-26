@@ -34,7 +34,7 @@ export default function AhmedPopup({
               }`}
             >
               <Image
-                src="/images/home/ahmed-avatar.jpg"
+                src="/images/home/habibi-image-bot.png"
                 alt="Ahmed Voice Assistant"
                 fill
                 className="object-cover"
